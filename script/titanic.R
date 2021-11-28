@@ -191,4 +191,4 @@ output_df <- as.data.frame(PassengerId)
 output_df <- output_df %>%
   add_column(Survived = predictions)
 
-write_csv(output_df, file = "kaggle_submission.csv")
+write_csv(output_df, here("data", "processed", "kaggle_submission.csv"))
